@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://pg-db:5432/oms_db
+    username: camilo
+    password: camilo123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/
