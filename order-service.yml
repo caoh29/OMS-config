@@ -1,5 +1,4 @@
 server:
   port: 3000
-
-  config:
-    import: configserver:http://config-server:8888
+  # config:
+  #   import: configserver:http://config-server:8888
