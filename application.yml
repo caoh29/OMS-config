@@ -1,14 +1,6 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://pg-db:5432/oms_db
-    username: camilo
-    password: camilo123
-    driver-class-name: org.postgresql.Driver
-
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+server:
+  config:
+    import: configserver:http://config-server:8888
 
 eureka:
   client:

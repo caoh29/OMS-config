@@ -1,8 +1,17 @@
 server:
   port: 8090
 
-  config:
-    import: configserver:http://config-server:8888
+spring:
+  datasource:
+    url: jdbc:postgresql://pg-db:5432/oms_db
+    username: camilo
+    password: camilo123
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 # spring:
 #   application:
 #     name: auth-server
