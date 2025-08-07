@@ -1,7 +1,5 @@
 server:
   port: 8090
-  # config:
-  #   import: configserver:http://config-server:8888
 
 spring:
   datasource:
