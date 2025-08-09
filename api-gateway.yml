@@ -6,4 +6,4 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          issuer-uri: http://auth-server-keycloak:8090/realms/OMS-realm
+          issuer-uri: http://auth-server-keycloak:8443/realms/OMS-realm
