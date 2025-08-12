@@ -7,3 +7,22 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://auth-server-keycloak:8443/realms/OMS-realm
+          # jwk-set-uri: http://auth-server-keycloak:8443/realms/OMS-realm/protocol/openid-connect/certs
+
+      client:
+        registration:
+          order-service:
+            client-id: order-service-client
+            client-secret: tzWoHpSdz2vWizA1XN0fr45vqWRqLdyP
+            authorization-grant-type: client_credentials
+        provider:
+          order-service:
+            issuer-uri: http://auth-server-keycloak:8443/realms/OMS-realm
+            # token-uri: http://auth-server-keycloak:8443/realms/OMS-realm/protocol/openid-connect/token
+
+app:
+  services:
+    inventory-service:
+      base-url: http://inventory-service:3002
+    product-catalog-service:
+      base-url: http://product-catalog-service:3001
