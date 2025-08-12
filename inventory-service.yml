@@ -1,0 +1,9 @@
+server:
+  port: 3002
+
+spring:
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://auth-server-keycloak:8443/realms/OMS-realm
