@@ -1,7 +1,6 @@
 server:
   port: 3000
 
-spring:
   security:
     oauth2:
       resourceserver:
@@ -26,3 +25,11 @@ app:
       base-url: http://inventory-service:3002
     product-catalog-service:
       base-url: http://product-catalog-service:3001
+
+rabbitmq:
+  queue:
+    name: orders-queue
+  exchange:
+    name: orders-exchange
+  routing-key:
+    name: orders-routing-key
