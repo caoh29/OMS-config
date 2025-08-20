@@ -9,15 +9,9 @@ spring:
           issuer-uri: http://auth-server-keycloak:8443/realms/OMS-realm
 
 management:
-  endpoints:
-    web:
-      exposure:
-        include: health,info
-    health:
-      show-details: always
-  health:
-    circuitbreakers:
-      enabled: true
+  observations:
+    key-values:
+      application: api-gateway
 
 resilience4j:
   circuitbreaker:

@@ -27,6 +27,11 @@ app:
     product-catalog-service:
       base-url: http://product-catalog-service:3001
 
+management:
+  observations:
+    key-values:
+      application: order-service
+
 rabbitmq:
   queue:
     name: orders-queue
