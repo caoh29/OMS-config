@@ -11,3 +11,8 @@ spring:
 rabbitmq:
   queue:
     name: orders-queue
+
+management:
+  observations:
+    key-values:
+      application: notification-service
