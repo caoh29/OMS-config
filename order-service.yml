@@ -7,7 +7,6 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: http://auth-server-keycloak:8443/realms/OMS-realm
-          # jwk-set-uri: http://auth-server-keycloak:8443/realms/OMS-realm/protocol/openid-connect/certs
 
       client:
         registration:
@@ -18,7 +17,6 @@ spring:
         provider:
           order-service-client: # changed from 'order-service'
             issuer-uri: http://auth-server-keycloak:8443/realms/OMS-realm
-            # token-uri: http://auth-server-keycloak:8443/realms/OMS-realm/protocol/openid-connect/token
 
 app:
   services:
